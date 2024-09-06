@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import BallCanvas from "./components/Ball";
+import Meteors from "@/components/magicui/meteors";
 
 export default function Home() {
   useEffect(() => {
@@ -42,6 +43,7 @@ export default function Home() {
 
       <div className="w-full h-screen content-center" data-aos="fade-up">
         <div className="grid grid-cols-2">
+          <Meteors number={50} />
           <img src="astronaut.png" className="animate-upDown"></img>
           <p>Hi my name is Andy</p>
         </div>
